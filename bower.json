@@ -1,0 +1,29 @@
+{
+  "name": "thule",
+  "description": "",
+  "directory": "src/assets/",
+  "main": "dist/index.html",
+  "authors": [
+    "monkeysbrain"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "owl.carousel": "owl2#^0.1.0",
+    "fancybox": "^3.0.47",
+    "font-awesome": "^4.7.0",
+    "font-roboto": "^0.0.2",
+    "raleway": "^1.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
