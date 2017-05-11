@@ -3,3 +3,38 @@
 		display flex
 		justify-content space-between
 		align-items center
+	&--content
+		margin-top 2em
+.js-switch
+	&__open
+		&::after
+			content '^'
+	&__close
+		display: none
+		&::after
+			content '^'
+.owl-nav.disabled
+	display flex !important
+	background: red
+	margin-top 1em
+	height 0
+	justify-content space-between
+.owl-next
+	background url('../img/arrow.svg') center no-repeat
+	background-size cover
+	width 38px
+	margin-right 1em
+	&:hover
+		background url('../img/arrow.svg') center no-repeat
+		background-size cover
+.owl-prev
+	background url('../img/arrow.svg') center no-repeat
+	background-size cover
+	transform rotate(180deg)
+	width 38px
+	margin-left 1em
+	&:hover
+		background url('../img/arrow.svg') center no-repeat
+		background-size cover
+.owl-dot
+	display: none

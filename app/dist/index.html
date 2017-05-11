@@ -5,6 +5,8 @@
   <title>fanserials</title>
   <link rel="stylesheet" href="css/reset.css"/>
   <link rel="stylesheet" href="css/fonts.css"/>
+  <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="css/carousel.css"/>
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -28,11 +30,16 @@
   <div class="wrapper--main"> 
     <div class="new-serials--header">
       <div class="h1">Новые серии</div>
-      <select class="drop">
-        <option value="">Lorem ipsum.</option>
-        <option value="">lorem</option>
-        <option value="">lorem</option>
-      </select>
+      <div class="switch">
+        <p class="js-switch__open">Развернуть</p>
+        <p class="js-switch__close">Свернуть</p>
+      </div>
+    </div>
+    <div class="owl-carousel new-serials--content">
+      <div class="item"><img src="img/new-1.jpg"/></div>
+      <div class="item"><img src="img/new2.jpg"/></div>
+      <div class="item"><img src="img/new3.jpg"/></div>
+      <div class="item"><img src="img/new4.jpg"/></div>
     </div>
   </div>
   <script src="vendors/vendors.js"></script>
