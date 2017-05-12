@@ -65,3 +65,35 @@ $(document).ready(function(){
     }
   });
 });
+
+$(function(){
+$(document).ready(function(){
+  $(".genre").owlCarousel({
+    loop:false,
+    stagePadding: 100,
+    nav:true,
+    margin:10,
+    navText: [],
+    responsive:{
+      0:{
+        items:2
+      },
+      600:{
+        items:2
+      },
+      1000:{
+        items:2
+      }
+    }
+  });
+});
+
+if($(window).width() < 2767) {
+    console.log("min")
+    $(".blocks").addClass("genre owl-carousel")
+} else {
+    $(".blocks").removeClass("genre owl-carousel")
+}
+
+});
+
