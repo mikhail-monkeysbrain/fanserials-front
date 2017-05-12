@@ -65,3 +65,34 @@ $(document).ready(function(){
     }
   });
 });
+
+$(function(){
+$(document).ready(function(){
+  $(".genre").owlCarousel({
+    loop:false,
+    stagePadding: 100,
+    nav:false,
+    margin:10,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:2
+      },
+      1000:{
+        items:0
+      }
+    }
+  });
+});
+
+if($(window).width() < 2767) {
+    console.log("min")
+    $(".blocks").addClass("genre owl-carousel")
+} else {
+    $(".blocks").removeClass("genre owl-carousel")
+}
+
+});
+

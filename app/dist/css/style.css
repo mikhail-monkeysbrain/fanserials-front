@@ -70,6 +70,26 @@ input.search::placeholder {
   width: 169px;
   letter-spacing: -1px;
 }
+.string {
+  width: 100%;
+  color: #fffefe;
+  font-family: "PTSansRegular";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  box-sizing: content-box;
+  padding: 0 1.1em 0 1.1em;
+  margin-left: -1.1em;
+  text-align: center;
+}
+.string__big {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.string__yellow {
+  background: linear-gradient(to right, #fc9b29 0%, #f88701 100%);
+}
 header {
   width: 100%;
   background: #151515;
@@ -315,4 +335,18 @@ header {
 .wrapper__serial {
   position: relative;
   box-shadow: 0 15px 20px -10px #000;
+}
+.blocks {
+  margin-top: 2em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blocks .item {
+  text-align: center;
+  background: #f00;
+  padding: 2em;
 }
