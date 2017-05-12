@@ -6,11 +6,7 @@
 		p.js-switch__close
 			| Свернуть
 .owl-carousel.new-serials--content
-	.item
-		img(src='img/new-1.jpg')
-	.item
-		img(src='img/new2.jpg')
-	.item
-		img(src='img/new3.jpg')
-	.item
-		img(src='img/new4.jpg')
+	- for (var y = 0; y < 5; y++)
+		.item
+			- for (var x = 0; x < 4; x++)
+				include ../elements/serial-item.jade

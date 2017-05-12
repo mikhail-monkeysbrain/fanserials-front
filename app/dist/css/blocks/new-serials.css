@@ -12,6 +12,18 @@
 .new-serials--content {
   margin-top: 2em;
 }
+.new-serials--content:hover .owl-nav {
+  opacity: 1;
+}
+.new-serials--content .item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1em;
+}
 .js-switch__open::after {
   content: '^';
 }
@@ -21,11 +33,9 @@
 .js-switch__close::after {
   content: '^';
 }
-.owl-nav.disabled {
-  display: -webkit-flex !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  background: #f00;
+.owl-nav {
+  opacity: 0;
+  transition: 0.5s ease-in;
   margin-top: 1em;
   height: 0;
   -webkit-justify-content: space-between;

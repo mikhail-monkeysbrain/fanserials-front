@@ -5,6 +5,13 @@
 		align-items center
 	&--content
 		margin-top 2em
+		&:hover
+			.owl-nav
+				opacity 1
+		.item
+			display flex
+			justify-content space-between
+			padding-bottom 1em
 .js-switch
 	&__open
 		&::after
@@ -13,9 +20,9 @@
 		display: none
 		&::after
 			content '^'
-.owl-nav.disabled
-	display flex !important
-	background: red
+.owl-nav
+	opacity 0
+	transition .5s ease-in
 	margin-top 1em
 	height 0
 	justify-content space-between

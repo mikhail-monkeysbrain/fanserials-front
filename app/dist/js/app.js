@@ -12,19 +12,19 @@ $(function () {
 
 $(document).ready(function(){
   $(".new-serials--content").owlCarousel({
-    loop:true,
+    loop:false,
     nav:true,
     margin:10,
     navText: [],
     responsive:{
       0:{
-        items:2
+        items:1
       },
       600:{
-        items:4
+        items:1
       },
       1000:{
-        items:4
+        items:1
       }
     }
   });

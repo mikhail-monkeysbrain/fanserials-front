@@ -1,0 +1,92 @@
+.serial__item {
+  position: relative;
+  cursor: pointer;
+}
+.serial__item:hover .serial__item__hovered {
+  opacity: 1;
+}
+.serial__item:hover .serial__item--translate__item {
+  display: block;
+}
+.serial__item:hover .serial__item--header {
+  color: #e78108;
+  text-decoration: underline;
+}
+.serial__item:hover .serial__item--header .serial__item--header__name,
+.serial__item:hover .serial__item--header .serial__item--header__properties {
+  color: #e78108;
+}
+.serial__item__hovered {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  transition: -webkit-animation;
+  transition: animation;
+  transition: animation, -webkit-animation;
+}
+.serial__item__hovered .play {
+  width: 40px;
+  height: 40px;
+  background: url("../img/play.png") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: calc(50% - 20px);
+}
+.serial__item--translate {
+  position: absolute;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  text-align: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.serial__item--translate__item {
+  min-width: 30%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 12px;
+  padding: 7px;
+  font-family: 'PTSansBold';
+  border-top: 1px solid #e98c1d;
+  margin: 1px;
+}
+.serial__item--translate__item:nth-child(4) {
+  display: none;
+}
+.serial__item--header {
+  text-align: center;
+  margin-top: 1em;
+}
+.serial__item--header__name {
+  color: #363636;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.serial__item--header__properties {
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.wrapper__serial {
+  position: relative;
+  box-shadow: 0 15px 20px -10px #000;
+}
