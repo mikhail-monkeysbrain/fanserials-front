@@ -19,7 +19,7 @@
 			left 0
 			top 0
 			width 100%
-			height 100%
+			height 98%
 			background rgba(0,0,0, .5)
 			transition animation
 			.play
@@ -68,12 +68,54 @@
 .wrapper__serial
 	position relative
 	box-shadow 0 15px 20px -10px black
-	
+	&__noshadow
+		box-shadow 0 0 0 0 transparent
+		&:hover
+			box-shadow 0 0 0 0 transparent
 .blocks
 	margin-top 2em
 	display flex
-	justify-content space-between
+	justify-content center
 	.item
 		text-align center
-		background red
 		padding 2em
+		line-height: 34px
+		color: #b0b0b0
+		font-size: 18px
+		font-weight: 400
+		border-bottom 3px solid transparent
+		cursor pointer
+		transition animation
+		&__current
+			color: #5a5a5a
+			font-size: 18px
+			font-weight: 700
+			border-color #e67e02
+.genres
+	width calc(100% + 1.8em)
+	box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.35)
+	background-color: #f7f7f7
+	margin-left -.9em
+	display flex
+	flex-wrap wrap
+	justify-content center
+	align-items center
+	padding 24px
+	.item
+		cursor pointer
+		transition animation
+		padding .5em
+		margin .5em
+		border: 1px solid #e2e2e2
+		background-color: #efefef
+		color: #808080
+		font-size: 14px
+		font-weight: 400
+		line-height: 18px
+		text-align center
+		&__current
+			color: #fff
+			font-weight: 700
+			border-color #e67e02
+			text-align center
+			background linear-gradient(to right, #fc9b29 0%, #f88701 100%)

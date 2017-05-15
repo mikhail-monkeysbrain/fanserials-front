@@ -1,11 +1,19 @@
+//start blocks/head
 include blocks/head
-
 	block content	
+	//start blocks/header
 	include blocks/header
 	.wrapper--main 
+		//start blocks/new-serials
 		include blocks/new-serials
 		a(href="#").string.string__big.string__yellow
 			|	Показать все новые серии и озвучки &#709;
+
+		//start blocks/list-serials
 		include blocks/list-serials
-		
+		//start blocks/list-abc
+		include blocks/list-abc
+		//start blocks/news-list
+		include blocks/news-list
+	//start blocks/footer
 	include blocks/footer
