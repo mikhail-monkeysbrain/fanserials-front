@@ -81,7 +81,7 @@ $(document).ready(function(){
         items:2
       },
       1000:{
-        items:0
+        items:2
       }
     }
   });

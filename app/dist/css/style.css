@@ -337,7 +337,10 @@ header {
   box-shadow: 0 15px 20px -10px #000;
 }
 .blocks {
+<<<<<<< HEAD
   margin-top: 2em;
+=======
+>>>>>>> a22902f907defdfa2c84a224cda4b4bf40949ce9
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -348,5 +351,8 @@ header {
 .blocks .item {
   text-align: center;
   background: #f00;
+<<<<<<< HEAD
   padding: 2em;
+=======
+>>>>>>> a22902f907defdfa2c84a224cda4b4bf40949ce9
 }
