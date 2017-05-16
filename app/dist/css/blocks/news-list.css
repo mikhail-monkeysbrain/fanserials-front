@@ -1,12 +1,18 @@
 .news-list {
   margin-top: 92px;
 }
+@media screen and (max-width: 960px) {
+  .news-list {
+    overflow: auto;
+  }
+}
 .news-list--card.literal__item--card {
   z-index: 2;
   display: none;
   width: 278px;
   height: 262px;
   left: 100%;
+  overflow: hidden;
 }
 .news-list--card.literal__item--card.js__show {
   display: -webkit-flex;
@@ -26,6 +32,7 @@
   cursor: pointer;
   text-align: center;
   width: 100%;
+  overflow: hidden;
 }
 .news-list--item img {
   position: relative;

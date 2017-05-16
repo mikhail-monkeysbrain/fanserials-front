@@ -1,3 +1,5 @@
+/*
+  Раскрытие строки поиска уже реализовано на сайте. На всякий случай прикрутил свой вариант реализации
 $(function () {
 	$('.search__top').click(function(){
 		$(this).addClass('js-opened');
@@ -9,6 +11,7 @@ $(function () {
 		$(this).hide();
 	});
 });
+*/
 
 $(document).ready(function(){
   $(".new-serials--content").owlCarousel({
@@ -29,23 +32,6 @@ $(document).ready(function(){
     }
   });
 
-  $(".slide-two").owlCarousel({
-    loop:true,
-    nav:true,
-    margin:10,
-    navText: [],
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:2
-      },
-      1000:{
-        items:4
-      }
-    }
-  });
 
   $(".slide-three").owlCarousel({
     loop:true,
@@ -88,13 +74,15 @@ $(document).ready(function(){
 });
 
 
-if($(window).width() < 767) {
-    console.log("min")
-    $(".blocks").addClass("genre owl-carousel");
+if($(window).width() < 960) {
     $(".genres").addClass("genres__slider owl-carousel");
 } else {
-    $(".blocks").removeClass("genre owl-carousel");
     $(".genres").removeClass("genres__slider owl-carousel");
+}
+if($(window).width() < 640) {
+    $(".genres").removeClass("genres__slider owl-carousel");
+} else {
+    $(".genres").addClass("genres__slider owl-carousel");
 }
 });
 
@@ -115,21 +103,19 @@ $(function(){
 });
 
 
-$(document).ready(function(){
+$(function(){
   $('span.info').click(function(){
-    $('.news-list--card').hide(500)
-    $(this).parent('.serial__item__news').children('.news-list--card').show(500);
+    $('.news-list--card').hide(500);
+    $(this).addClass('js__op').parent('.serial__item__news').children('.news-list--card').show(500);
+    $('.wrapper--main').css('z-index', '500');
+    $(function(){
+      $('.wrapper--main').click(function(){
+        //$('.news-list--card').hide(500);
+        location.reload();
+      })
+    });
   });
 });
-
-/*
-$(document).ready(function(){
-  $('.literal__item').hover(function(){
-    $(this).children('.literal__item--card').fadeToggle(500);
-  });
-});
-*/
-
 $(document).ready(function(){
   $(".genres__slider").owlCarousel({
     loop:false,
@@ -138,14 +124,31 @@ $(document).ready(function(){
     margin:10,
     responsive:{
       0:{
-        items:3
+        items:1
       },
-      600:{
-        items:5
+      768:{
+        items:4
       },
-      1000:{
-        items:7
-      }
     }
   });
 });
+
+/*
+$(document).ready(function(){
+  $(".fight").click(function(){
+    $('.item__all').removeClass("item__current");
+    $(".abc li").addClass('none');
+    $('.js__show').addClass('none');
+    $(".fight").addClass('item__current');
+  });
+  $(".detective").click(function(){
+    $('.item__all').removeClass("item__current");
+    $(".abc li").addClass('none');
+    $('.js__show').addClass('none');
+    $(".detective").addClass('item__current');
+  });
+  $('.item__all').click(function(){
+    location.reload();
+  });
+});
+*/

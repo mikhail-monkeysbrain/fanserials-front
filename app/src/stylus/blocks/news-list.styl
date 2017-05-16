@@ -1,5 +1,7 @@
 .news-list
 	margin-top 92px
+	@media screen and (max-width: 960px)
+		overflow auto
 	&--card
 		&.literal__item--card
 			z-index 2
@@ -7,16 +9,19 @@
 			width: 278px
 			height: 262px
 			left 100%
+			overflow hidden
 			&.js__show
 				display flex
 	&--block
 		margin 25px 0
 		display flex
 		align-items center
+		
 	&--item
 		cursor pointer
 		text-align center
 		width 100%
+		overflow hidden
 		img
 			position relative
 			width 100%

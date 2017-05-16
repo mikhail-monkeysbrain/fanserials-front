@@ -4,7 +4,7 @@
 			.literal__header #
 			ul
 				- for (var d = 0; d < 5; d++)
-					li.literal__item
+					li.literal__item.fight
 						a(href="#") Lorem ipsum dolor.
 						a(href="#").literal__item--card.border__orange
 							.poster
@@ -16,7 +16,7 @@
 								p.card__header 10 причин моей
 								p.card__tags боевики, детективы, боевики, детективы, боевики, детективы
 								p.card__description Герой войны возвращается домой и в силу обстоятельств вынужден обратиться за помощью в антитеррористический отдел...
-					li.literal__item
+					li.literal__item.detective
 						a(href="#") Lorem ipsum dolor sit amet
 						a(href="#").literal__item--card.border__orange
 							.poster
@@ -30,3 +30,4 @@
 								p.card__description Герой войны возвращается домой и в силу обстоятельств вынужден обратиться за помощью в антитеррористический отдел...
 			.js__show
 				|	Показать все
+				.js-switch__open__opacity

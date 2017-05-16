@@ -7,14 +7,16 @@
 	box-sizing border-box
 
 body
-	font-family "PTSansRegular"
+	font-family "PT Sans"
 	background url('../img/bg__top.png') top center no-repeat, black
 	background-size 100%
+	overflow-x hidden
 	
 .wrapper
 	&--main
 		background #fff
-		width 1170px
+		max-width 1170px
+		width 100%
 		margin: 190px auto 0
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25)
 		padding 30px 15px
@@ -34,7 +36,7 @@ input
 		border-left 2px solid #242424
 		border-right 2px solid #242424
 		position: relative
-		height 54px
+		height 53px
 		width 110px
 		padding-left 45px
 		font-size 15px
@@ -55,12 +57,11 @@ input
 	font-size: 30px
 	font-weight: 700
 	line-height: 18px
-	width: 169px
 	letter-spacing -1px
 .string
 	width 100%
 	color: #fffefe
-	font-family: "PTSansRegular"
+	font-family: "PT Sans"
 	font-size: 14px
 	font-weight: 700
 	text-transform: uppercase
@@ -69,6 +70,8 @@ input
 	padding 0 1.1em 0 1.1em
 	margin-left -1.1em
 	text-align center
+	@media screen and (max-width: 960px)
+		font-size 18px
 	&__big
 		padding-top 25px
 		padding-bottom 25px

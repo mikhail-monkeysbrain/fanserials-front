@@ -11,7 +11,7 @@ justify-content: space-between;
 width: calc(100% + 36px + 20px);
 position: absolute;
 left: calc(-16px - 10px);
-top: calc(50% - 19px - 1em);
+top: 20%;
 }
 .owl-dots {
 display: flex;
