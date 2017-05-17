@@ -4,7 +4,7 @@
 		justify-content space-between
 		align-items center
 	&--content
-		margin-top 2em
+		margin-top 1em
 		&:hover
 			.owl-nav
 				opacity 1
@@ -18,7 +18,7 @@
 	&__open
 		cursor pointer
 		display flex
-		align-items center
+		align-items baseline
 		&::after
 			content ''
 			display inline-block
@@ -32,11 +32,11 @@
 			&::after
 				content ''
 				display inline-block
-				width: 8px
-				height: 6px
+				width: 10px
+				height: 8px
 				background: url('../img/switch__white.svg') no-repeat
 				background-size contain
-				margin-left 8px
+				margin-left 6px
 		&__opacity
 			display inline-block
 			&::after
@@ -47,7 +47,7 @@
 				height: 4px
 				background: url('../img/switch.svg') no-repeat
 				background-size contain
-				margin-left 0px
+				margin-left 6px
 				@media screen and (max-width: 960px)
 					width 11px
 					height 9px

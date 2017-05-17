@@ -61,7 +61,6 @@ input
 .string
 	width 100%
 	color: #fffefe
-	font-family: "PT Sans"
 	font-size: 14px
 	font-weight: 700
 	text-transform: uppercase
@@ -73,8 +72,11 @@ input
 	@media screen and (max-width: 960px)
 		font-size 18px
 	&__big
-		padding-top 25px
-		padding-bottom 25px
+		padding-top 21px
+		padding-bottom 21px
+		margin-top -2em
+		@media screen and (max-width: 960px)
+			margin-bottom 1em
 	&__yellow
 		background linear-gradient(to right, #fc9b29 0%, #f88701 100%)
 
@@ -104,9 +106,9 @@ footer
 		content ''
 		display block
 		position absolute
-		left -10px
+		left -9px
 		width: 0
 		height: 0
-		border-top: 9px solid transparent
-		border-right: 7px solid #f88701
-		border-bottom: 9px solid transparent
+		border-top: 8px solid transparent
+		border-right: 6px solid #f88701
+		border-bottom: 8px solid transparent

@@ -1,5 +1,30 @@
 .news-list
-	margin-top 92px
+	margin-top 48px
+	div.info
+		&::after
+			content ''
+			position absolute
+			display block
+			background: #fff
+			z-index 101
+			bottom 0
+			width 100%
+			left 0
+			height 1em
+	.rate__small
+		margin-top -15px
+		.kinigo
+			margin-left -7px
+	.play
+		top calc(50% - 19px) !important
+	.serial__item
+		&:hover
+			.serial__item__hovered
+				opacity 1
+		&__hovered
+			transition animation
+			position absolute
+			opacity 0
 	@media screen and (max-width: 960px)
 		overflow auto
 	&--card
@@ -43,4 +68,5 @@ span
 		text-align center
 		right 13px
 		top 22px
-		
+		@media screen and (max-width: 960px)
+			display none

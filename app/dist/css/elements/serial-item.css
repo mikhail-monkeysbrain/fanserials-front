@@ -5,6 +5,7 @@
 @media screen and (max-width: 960px) {
   .serial__item {
     width: 50%;
+    margin-bottom: 2em;
   }
 }
 @media screen and (max-width: 768px) {
@@ -15,8 +16,16 @@
 .serial__item:hover .serial__item__hovered {
   opacity: 1;
 }
+.serial__item:hover .serial__item__hovered .play {
+  opacity: 1;
+}
 .serial__item:hover .serial__item--translate__item {
   display: block;
+}
+@media screen and (max-width: 960px) {
+  .serial__item:hover .serial__item--translate__item:nth-child(4) {
+    display: none;
+  }
 }
 .serial__item:hover .serial__item--header {
   color: #e78108;
@@ -39,15 +48,21 @@
   transition: animation, -webkit-animation;
 }
 .serial__item__hovered .play {
-  width: 40px;
-  height: 40px;
+  width: 39px;
+  height: 39px;
   background: url("../img/play.png") center no-repeat;
   background-size: cover;
   position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: calc(50% - 20px);
+  opacity: 0;
+  top: 56px;
+}
+@media screen and (max-width: 960px) {
+  .serial__item__hovered .play {
+    top: calc(50% - 19px);
+  }
 }
 .serial__item--translate {
   position: absolute;
@@ -71,11 +86,12 @@
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  opacity: 0.7;
   font-size: 12px;
   padding: 7px;
-  font-family: 'PTSansBold';
+  font-weight: 700;
   border-top: 1px solid #e98c1d;
-  margin: 1px;
+  margin: 0 1px;
 }
 @media screen and (max-width: 960px) {
   .serial__item--translate__item {
@@ -116,6 +132,11 @@
     margin: 1em auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .wrapper__serial {
+    width: 80%;
+  }
+}
 .wrapper__serial__noshadow {
   box-shadow: 0 0 0 0 transparent;
 }
@@ -130,15 +151,19 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 25px auto 0;
+  width: 603px;
 }
 @media screen and (max-width: 768px) {
   .blocks {
     overflow-x: scroll;
     width: 100%;
-    padding-left: 20em;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 .blocks .item {
@@ -153,6 +178,12 @@
   transition: -webkit-animation;
   transition: animation;
   transition: animation, -webkit-animation;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 @media screen and (max-width: 768px) {
   .blocks .item {
@@ -160,17 +191,18 @@
     border-bottom: 3px solid #b0b0b0;
     margin: 0 5px;
     padding: 15px 35px;
+    font-size: 22px;
+    text-align: center;
   }
 }
 .blocks .item__current {
   color: #5a5a5a;
-  font-size: 18px;
   font-weight: 700;
   border-color: #e67e02;
 }
 .genres {
   width: calc(100% + 1.8em);
-  box-shadow: inset 0 0 7px rgba(0,0,0,0.35);
+  box-shadow: inset 0 0 7px rgba(0,0,0,0.15);
   background-color: #f7f7f7;
   margin-left: -0.9em;
   display: -webkit-flex;
@@ -186,6 +218,28 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 24px 0 33px 0;
+}
+@media screen and (max-width: 768px) {
+  .genres {
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow-x: scroll;
+  }
+}
+@media screen and (max-width: 500px) {
+  .genres {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow-x: hidden;
+  }
 }
 .genres .owl-dots {
   display: none;
@@ -205,9 +259,26 @@
   line-height: 18px;
   text-align: center;
 }
+@media screen and (max-width: 960px) {
+  .genres .item {
+    font-size: 20px;
+    padding: 12px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .genres .item {
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
 .genres .item__current {
   color: #fff;
-  border-color: #e67e02;
+  border-color: transparent;
   text-align: center;
   background: linear-gradient(to right, #fc9b29 0%, #f88701 100%);
 }

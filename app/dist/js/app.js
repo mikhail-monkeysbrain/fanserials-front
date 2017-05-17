@@ -74,16 +74,6 @@ $(document).ready(function(){
 });
 
 
-if($(window).width() < 960) {
-    $(".genres").addClass("genres__slider owl-carousel");
-} else {
-    $(".genres").removeClass("genres__slider owl-carousel");
-}
-if($(window).width() < 640) {
-    $(".genres").removeClass("genres__slider owl-carousel");
-} else {
-    $(".genres").addClass("genres__slider owl-carousel");
-}
 });
 
 $(function(){
@@ -150,5 +140,15 @@ $(document).ready(function(){
   $('.item__all').click(function(){
     location.reload();
   });
+});
+*/
+
+/*
+$(window).resize(function(){
+  if($(window).width() < 960) {
+      $(".genres").addClass("genres__slider owl-carousel");
+  } else {
+      $(".genres").removeClass("genres__slider owl-carousel");
+  }
 });
 */
