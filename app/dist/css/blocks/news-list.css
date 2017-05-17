@@ -9,7 +9,7 @@
   z-index: 101;
   bottom: 0;
   width: 100%;
-  left: 0;
+  left: 9px;
   height: 1em;
 }
 .news-list .rate__small {
@@ -20,6 +20,23 @@
 }
 .news-list .play {
   top: calc(50% - 19px) !important;
+}
+.news-list .serial__item {
+  margin-bottom: 0;
+}
+.news-list .serial__item--header__name {
+  line-height: 10px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  .news-list .serial__item--header__name {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news-list .serial__item--header__properties {
+    font-size: 16px;
+  }
 }
 .news-list .serial__item:hover .serial__item__hovered {
   opacity: 1;
@@ -41,7 +58,7 @@
   display: none;
   width: 278px;
   height: 262px;
-  left: 100%;
+  left: calc(100% - 9px);
   overflow: hidden;
 }
 .news-list--card.literal__item--card.js__show {

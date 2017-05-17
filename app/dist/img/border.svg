@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<svg width="286" height="268" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <style type="text/css">.st0{fill:#ED8722;}</style>
+ <g>
+  <title>Layer 1</title>
+  <polygon id="XMLID_28_" class="st0" points="6,0 6,26.3 0,34.2 6,41.4 6,268 9,268 9,0 " fill="black"/>
+  <rect id="svg_4" height="268" width="277" y="0" x="9" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#ffffff"/>
+  <rect id="svg_5" height="0" width="2" y="52" x="78" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#ffffff"/>
+ </g>
+</svg>

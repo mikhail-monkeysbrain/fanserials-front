@@ -76,13 +76,15 @@
 				font-size: 18px
 				font-weight: 700
 				line-height: 22px
+				@media screen and (max-width: 960px)
+					font-size 130%
 			&__properties
 				color: #666666
 				font-size: 14px
 				font-weight: 400
 				line-height: 22px
 				@media screen and (max-width: 960px)
-					font-size 16px
+					font-size 130%
 .wrapper__serial
 	position relative
 	box-shadow 0 15px 20px -10px black
@@ -167,8 +169,11 @@
 			padding 12px
 			text-align center
 		@media screen and (max-width: 768px)
+			font-size 20px
+			padding 12px
 			flex-shrink 0
 			flex-grow 1
+			min-width 40%
 		&__current
 			color: #fff
 			border-color transparent

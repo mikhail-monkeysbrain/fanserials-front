@@ -111,6 +111,11 @@
   font-weight: 700;
   line-height: 22px;
 }
+@media screen and (max-width: 960px) {
+  .serial__item--header__name {
+    font-size: 130%;
+  }
+}
 .serial__item--header__properties {
   color: #666;
   font-size: 14px;
@@ -119,7 +124,7 @@
 }
 @media screen and (max-width: 960px) {
   .serial__item--header__properties {
-    font-size: 16px;
+    font-size: 130%;
   }
 }
 .wrapper__serial {
@@ -268,12 +273,15 @@
 }
 @media screen and (max-width: 768px) {
   .genres .item {
+    font-size: 20px;
+    padding: 12px;
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0;
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    min-width: 40%;
   }
 }
 .genres .item__current {
