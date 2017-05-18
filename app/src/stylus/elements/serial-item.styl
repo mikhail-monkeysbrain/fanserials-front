@@ -13,8 +13,9 @@
 				.play
 					opacity 1
 			.serial__item--translate__item
-				display block
+				display inline-block
 				&:nth-child(4)
+					width 100%
 					@media screen and (max-width: 960px)
 						display none
 			.serial__item--header
@@ -48,15 +49,13 @@
 		&--translate
 			position absolute
 			width 100%
-			display flex
-			justify-content space-between
 			bottom 0
 			background rgba(0,0,0, .8)
 			color #fff
-			text-align center
-			flex-wrap wrap
 			&__item
-				min-width 30%
+				display inline-block
+				min-width 31%
+				text-align center
 				flex-grow 1
 				opacity .7
 				font-size 12px

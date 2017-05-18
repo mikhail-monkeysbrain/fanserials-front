@@ -775,7 +775,10 @@ span.info {
   opacity: 1;
 }
 .serial__item:hover .serial__item--translate__item {
-  display: block;
+  display: inline-block;
+}
+.serial__item:hover .serial__item--translate__item:nth-child(4) {
+  width: 100%;
 }
 @media screen and (max-width: 960px) {
   .serial__item:hover .serial__item--translate__item:nth-child(4) {
@@ -822,24 +825,14 @@ span.info {
 .serial__item--translate {
   position: absolute;
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   bottom: 0;
   background: rgba(0,0,0,0.8);
   color: #fff;
-  text-align: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
 }
 .serial__item--translate__item {
-  min-width: 30%;
+  display: inline-block;
+  min-width: 31%;
+  text-align: center;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
