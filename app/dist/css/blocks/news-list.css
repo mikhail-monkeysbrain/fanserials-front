@@ -1,5 +1,5 @@
 .news-list {
-  margin-top: 48px;
+  margin-top: 25px;
 }
 .news-list div.info::after {
   content: '';
@@ -19,6 +19,7 @@
   margin-left: -7px;
 }
 .news-list .play {
+  top: -webkit-calc(50% - 19px) !important;
   top: calc(50% - 19px) !important;
 }
 .news-list .serial__item {
@@ -42,38 +43,43 @@
   opacity: 1;
 }
 .news-list .serial__item__hovered {
+  -webkit-transition: -webkit-animation;
   transition: -webkit-animation;
   transition: animation;
   transition: animation, -webkit-animation;
   position: absolute;
   opacity: 0;
 }
-@media screen and (max-width: 960px) {
-  .news-list {
-    overflow: auto;
-  }
-}
 .news-list--card.literal__item--card {
   z-index: 2;
   display: none;
   width: 278px;
   height: 262px;
+  left: -webkit-calc(100% - 9px);
   left: calc(100% - 9px);
   overflow: hidden;
 }
 .news-list--card.literal__item--card.js__show {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 .news-list--block {
   margin: 25px 0;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 960px) {
+  .news-list--block {
+    overflow: auto;
+  }
 }
 .news-list--item {
   cursor: pointer;
