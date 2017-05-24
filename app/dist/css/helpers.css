@@ -1,3 +1,6 @@
 .clear {
   clear: both;
 }
+.text__static {
+  max-width: 900px;
+}

@@ -1,6 +1,9 @@
 .clear {
   clear: both;
 }
+.text__static {
+  max-width: 900px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +24,7 @@ body {
   -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
           box-shadow: 0 2px 5px rgba(0,0,0,0.25);
   padding: 30px 15px;
+  position: relative;
 }
 a {
   text-decoration: none;
@@ -28,6 +32,24 @@ a {
 }
 li {
   list-style: none;
+}
+.square {
+  padding-left: -webkit-calc(1em + 9px);
+  padding-left: calc(1em + 9px);
+}
+.square li {
+  margin-bottom: 1em;
+}
+.square li::before {
+  content: '';
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: #e67e02;
+  vertical-align: middle;
+  margin-left: -webkit-calc(-1em - 9px);
+  margin-left: calc(-1em - 9px);
+  margin-right: 1em;
 }
 input.search {
   border: 0;
@@ -77,6 +99,12 @@ input.search::placeholder {
   font-weight: 700;
   line-height: 18px;
   letter-spacing: -1px;
+}
+.h2 {
+  color: #080808;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
 }
 .string {
   width: 100%;
@@ -1056,6 +1084,56 @@ span.info {
   background: -webkit-linear-gradient(left, #fc9b29 0%, #f88701 100%);
   background: linear-gradient(to right, #fc9b29 0%, #f88701 100%);
 }
+.breadcrumbs {
+  margin-bottom: 49px;
+}
+.breadcrumbs ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 49px;
+  padding: 0 31px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  background: #080808;
+}
+.breadcrumbs li::after {
+  content: '»';
+  margin: 0 11px;
+  color: #ececec;
+  opacity: 0.75;
+}
+.breadcrumbs li:nth-last-child(1)::after {
+  content: '';
+}
+.breadcrumbs a {
+  color: #ececec;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  opacity: 0.75;
+}
+.static {
+  padding-left: 30px;
+}
+.static ol li {
+  margin-bottom: 1em;
+}
 .border__orange {
   border-left: 3px solid #f88701;
   padding: 20px;
@@ -1080,4 +1158,11 @@ span.info {
 }
 .border__orange__img div.info {
   padding: 20px;
+}
+.static p {
+  opacity: 0.8;
+  color: #080808;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
