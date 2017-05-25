@@ -1,0 +1,26 @@
+//start blocks/head
+include blocks/head
+	block content	
+	//start blocks/header
+	include blocks/header
+	.wrapper--main
+		include elements/breadcrumbs
+		.h1.h1__serial-header Сериалы
+		br
+		br
+		.advertising
+			.size__semi
+				img(src="img/vk__feed.jpg", alt="")
+			.size__semi
+				img(src="img/vk__feed.jpg", alt="")
+		.serials
+			- for (var x = 0; x < 24; x++)
+					include blocks/serials.jade
+		br
+		a(href="#").string.string__big.string__yellow
+			|	Показать все новые серии и озвучки
+			.js-switch__open__white
+		include elements/paggination
+		button.btn__to-top Наверх
+	//start blocks/footer
+	include blocks/footer

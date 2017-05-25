@@ -73,6 +73,17 @@ input
 	font-weight: 700
 	line-height: 18px
 	letter-spacing -1px
+	&__serial-header
+		position absolute
+		top 49px
+		left 0
+		background #0e0e0e
+		color: #e7e7e7
+		font-size: 27px
+		line-height: 35px
+		width 100%
+		padding-left 30px
+		height 52px
 .h2
 	color: #080808
 	font-size: 24px
@@ -100,6 +111,20 @@ input
 	&__yellow
 		background linear-gradient(to right, #fc9b29 0%, #f88701 100%)
 
+.btn__to-top
+	position: fixed
+	bottom: 30vh
+	right: calc(50% - 610px)
+	border: 1px solid #f88803
+	background-color: #f88803
+	opacity: 0.8
+	width: 140px
+	height: 46px
+	color: #fff
+	cursor: pointer
+	display none
+
+
 footer
 	width 100%
 	max-width 1170px
@@ -112,9 +137,11 @@ footer
 @import "blocks/new-serials.styl" 
 @import "blocks/list-abc.styl" 
 @import "blocks/news-list.styl" 
+@import "blocks/page-serials.styl" 
 
 @import "elements/serial-item.styl" 
 @import "elements/breadcrumbs.styl" 
+@import "elements/paggination.styl" 
 
 
 //modificators

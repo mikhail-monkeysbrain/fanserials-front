@@ -1,0 +1,50 @@
+media(maxWidth)
+	@media screen and (max-width: maxWidth)
+		{block}
+		
+.advertising
+	display flex
+	justify-content space-between
+	align-items flex-start
+	margin-bottom 2em
+	+media(960px)
+		display none
+.serials
+	display flex
+	justify-content space-between
+	align-items center
+	flex-wrap wrap
+	+media(580px)
+		justify-content center
+	.rating
+		position absolute
+		display flex
+		justify-content center
+		align-items center
+		top 10px
+		right -4px
+		background: #ff8d05
+		width: 30px
+		height: 18px
+		font-size: 12px
+		font-weight: 700
+		line-height: 24px
+		color #fff
+		z-index 2
+	.serial__item
+		padding-bottom 30px
+		+media(960px)
+			padding 0
+			margin-bottom 0
+		&.wrapper__serial
+			+media(960px)
+				height 160px !important
+		+media(960px)
+			width auto !important
+		&:hover
+			.serial__item--header
+				text-decoration none
+				.serial__item--header__name,
+				.serial__item--header__properties
+					color #000
+					

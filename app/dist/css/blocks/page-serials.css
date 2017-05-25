@@ -1,0 +1,96 @@
+.advertising {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 960px) {
+  .advertising {
+    display: none;
+  }
+}
+.serials {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+@media screen and (max-width: 580px) {
+  .serials {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.serials .rating {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 10px;
+  right: -4px;
+  background: #ff8d05;
+  width: 30px;
+  height: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+  z-index: 2;
+}
+.serials .serial__item {
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 960px) {
+  .serials .serial__item {
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .serials .serial__item.wrapper__serial {
+    height: 160px !important;
+  }
+}
+@media screen and (max-width: 960px) {
+  .serials .serial__item {
+    width: auto !important;
+  }
+}
+.serials .serial__item:hover .serial__item--header {
+  text-decoration: none;
+}
+.serials .serial__item:hover .serial__item--header .serial__item--header__name,
+.serials .serial__item:hover .serial__item--header .serial__item--header__properties {
+  color: #000;
+}

@@ -1,0 +1,50 @@
+.paggination
+	width 100%
+	display flex
+	justify-content center
+	align-items center
+	margin-top 1em
+	li
+		margin 1em 2px
+		width 33px
+		height 33px
+		text-align center
+		line-height 33px
+		border 1px solid transparent
+		transition .3s ease all
+		position relative
+		box-shadow 0px 5px 15px -5px transparent
+		&.current
+			color #fff
+			background: #f88803
+		a
+			position absolute
+			width 100%
+			height 100%
+			left 0
+			top 0
+		&:hover
+			box-shadow 0px 5px 15px -5px #f88803
+			border 1px solid #f88803
+		&:nth-child(1)
+			border 1px solid #f88803
+			&:hover
+				box-shadow 0px 5px 15px -5px transparent
+				background #f88803
+				color #fff
+				svg
+					path
+						stroke #fff
+		&:nth-child(8)
+			box-shadow 0px 5px 15px -5px transparent
+			border 1px solid transparent
+		&:nth-child(10)
+			border 1px solid #f88803
+			transform rotate(180deg)
+			&:hover
+				box-shadow 0px 5px 15px -5px transparent
+				background #f88803
+				color #fff
+				svg
+					path
+						stroke #fff
