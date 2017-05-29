@@ -1,0 +1,82 @@
+include ../elements/breadcrumbs
+.serial--header
+	.serial--header__semi
+		.h1 Сверхъестественное
+			.rate
+				.kinigo 5.6
+				.imdh 9.2
+		.rate__stars
+			p Рейтинг:
+			#reviewStars-input
+				input#star-9(type='radio', name='reviewStars')
+				label(title='gorgeous', for='star-9')
+				input#star-8(type='radio', name='reviewStars')
+				label(title='gorgeous', for='star-8')
+				input#star-7(type='radio', name='reviewStars')
+				label(title='gorgeous', for='star-7')
+				input#star-6(type='radio', name='reviewStars')
+				label(title='gorgeous', for='star-6')
+				input#star-5(type='radio', name='reviewStars')
+				label(title='gorgeous', for='star-5')
+				input#star-4(type='radio', name='reviewStars')
+				label(title='gorgeous', for='star-4')
+				input#star-3(type='radio', name='reviewStars')
+				label(title='good', for='star-3')
+				input#star-2(type='radio', name='reviewStars')
+				label(title='regular', for='star-2')
+				input#star-1(type='radio', name='reviewStars')
+				label(title='poor', for='star-1')
+				input#star-0(type='radio', name='reviewStars')
+				label(title='bad', for='star-0')
+		.season--checker
+			p Сезон: 
+			ul.season--checker
+				li.season--checker--item.season--checker--item__active
+					a(href="#") 1
+				li.season--checker--item
+					a(href="#") 2
+				li.season--checker--item
+					a(href="#") 3
+				li.season--checker--item
+					a(href="#") 4
+				li.season--checker--item
+					a(href="#") 5
+				li.season--checker--item
+					a(href="#") 6
+				li.season--checker--item
+					a(href="#") 7
+				li.season--checker--item
+					a(href="#") 8
+				li.season--checker--item
+					a(href="#") 9
+				li.season--checker--item
+					a(href="#") 10
+				li.season--checker--item
+					a(href="#") 11
+				li.season--checker--item
+					a(href="#") 12 
+	.serial--header__semi
+		br
+		.serial--header--button
+			a(href="#").btn.serial--header--button--item
+				img(src="img/serial--header--button.jpg") 
+				|	Смотреть с 1 серии
+			a(href="#").btn.serial--header--button--item
+				img(src="img/subscribe.svg") 
+				|	Подписаться
+			a(href="#").btn.serial--header--button--item
+				img(src="img/torrent.jpg") 
+				|	Скачать
+		.serial--header--ancors
+			a.serial--header--ancor(href="#") 
+				img(src="img/about_serial.svg")
+				|	О Сериале
+			a.serial--header--ancor(href="#") 
+				img(src="img/traler.svg")
+				|	Трейлер
+			a.serial--header--ancor(href="#") 
+				img(src="img/date_of_premier.svg")
+				|	Даты выхода
+			a.serial--header--ancor(href="#") 
+				img(src="img/review.svg")
+				|	Отзывы

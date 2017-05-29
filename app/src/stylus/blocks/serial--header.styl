@@ -1,0 +1,151 @@
+.serial--header
+	position relative
+	width 100%
+	box-sizing content-box
+	margin-left calc(-1em + 1px)
+	margin-top -2em
+	padding 1em 0 2em 2em
+	background #0e0e0e
+	display flex
+	justify-content space-between
+	align-items flex-start
+	margin-bottom 2em
+	&--button
+		display flex
+		margin-top -2em
+		&--item
+			background #3a3229
+			padding 15px 22px 11px 16px
+			border-top 2px solid #e67e02
+			color #fff
+			cursor pointer
+			margin -1px 1px
+			display flex
+			align-items center
+		img
+			height 15px
+			margin-right 10px
+	&--ancors
+		margin-top 23px
+		display flex
+		justify-content space-between
+	&--ancor
+		color: #6c6c6c
+		display flex
+		align-items center
+		img
+			height 16px
+			margin-right 10px
+	&__semi
+		&:nth-last-child(1)
+			padding-left 3em
+			padding-right 2em
+	.h1
+		color #fff
+		display flex
+		align-items center
+	p 
+		color #fefefe
+	.rate
+		margin-left .5em
+		background transparent
+		color #fff
+		padding-top 5px
+	.kinigo::before
+		background: url(../img/kinogo__gray.png) center no-repeat
+		background-size: cover
+	.imdh::before
+		background: url(../img/imdb__gray.png) center no-repeat
+		background-size: cover
+.rate__stars
+	display flex
+	align-items center
+	margin-top 12px
+#reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label 
+	background url('../img/rate__stars.png') no-repeat
+#reviewStars-input 
+	overflow hidden
+	margin-left 10px
+	position relative
+	float left
+#reviewStars-input 
+	input 
+		opacity 0
+		width 18px
+		height 16px
+		position absolute
+		top 0
+		z-index 0
+#reviewStars-input input:checked ~ label 
+	background-position 0 -16px
+	width 18px
+	height 16px
+#reviewStars-input label 
+	background-position 0 0
+	width 18px
+	height 16px
+	float right
+	cursor pointer
+	margin-right 2px
+	position relative
+	z-index 1
+#reviewStars-input label:hover, #reviewStars-input label:hover ~ label 
+	background-position 0 -16px
+	width 18px
+	height 16px
+#reviewStars-input #star-0 
+	left 0px
+#reviewStars-input #star-1 
+	left 20px
+#reviewStars-input #star-2 
+	left 40px
+#reviewStars-input #star-3 
+	left 60px
+#reviewStars-input #star-4 
+	left 80px
+#reviewStars-input #star-5 
+	left 100px
+#reviewStars-input #star-6
+	left 120px
+#reviewStars-input #star-7 
+	left 140px
+#reviewStars-input #star-8
+	left 160px
+#reviewStars-input #star-9
+	left 180px
+	
+.season--checker
+	margin-top 40px
+	display flex
+	align-items center
+	&--item
+		color #848484
+		width 35px
+		height 35px
+		text-align center
+		line-height 35px
+		background: #242424
+		margin 0 1px
+		position relative
+		transition animation
+		&:hover
+			background: #343434
+		&__active
+			background #e67e02
+			color #fff
+	a
+		position absolute
+		width 100%
+		height 100%
+		left 0
+		top 0
+ul
+	&.season--checker
+		margin-top 0
+		margin-left .5em
+		
+.serial--header__tabs
+	display flex
+	justify-content space-between
+	align-items center
+	color #fefefe

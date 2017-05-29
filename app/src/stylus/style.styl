@@ -89,6 +89,11 @@ input
 	font-size: 24px
 	font-weight: 400
 	line-height: 30px
+.h3
+	color: #e7e7e7
+	font-size: 24px
+	font-weight: 400
+	line-height: 30px
 .string
 	width 100%
 	color: #fffefe
@@ -124,6 +129,26 @@ input
 	cursor: pointer
 	display none
 
+button
+	cursor pointer
+	&.btn
+		background: transparent
+		border: 1px solid #f88803
+		color: #f88803
+		font-size: 14px
+		font-weight: 400
+		display flex
+		justify-content center
+		align-items center
+		padding 13px
+		&__full
+			width 100%
+		img
+			width 16px !important
+			height 16px !important
+			margin-right 10px
+			margin-top 0
+			margin-bottom 0
 
 footer
 	width 100%
@@ -138,6 +163,8 @@ footer
 @import "blocks/list-abc.styl" 
 @import "blocks/news-list.styl" 
 @import "blocks/page-serials.styl" 
+@import "blocks/serial--header.styl" 
+@import "blocks/serial--footer.styl" 
 
 @import "elements/serial-item.styl" 
 @import "elements/breadcrumbs.styl" 
