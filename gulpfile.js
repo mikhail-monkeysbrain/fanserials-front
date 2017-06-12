@@ -12,6 +12,7 @@ var env         = require('minimist')(process.argv.slice(2)),
     prefixer    = require('autoprefixer-stylus'),
     imagemin    = require('gulp-imagemin'),
     cache       = require('gulp-cache'),
+    sourcemaps = require('gulp-sourcemaps'),
     ftp         = require('gulp-ftp'),
     rsync       = require('rsyncwrapper');
 
@@ -41,6 +42,14 @@ gulp.task('csso', function () {
         .pipe(gulp.dest('app/dist/css/min'));
 });
 
+// External sourcemaps 
+gulp.task('sourcemaps', function () {
+  return gulp.src('app/dist/css/*.css')
+    .pipe(sourcemaps.init())
+    .pipe(stylus())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('app/dist/css/'));
+});
 
 gulp.task('copy', function() {
     return gulp.src(['app/src/*.html', 'app/src/*.txt'])
@@ -118,7 +127,7 @@ gulp.task('deploy', function () {
 });
 
 // Дев
-gulp.task('default', [(env.fy) ? 'browserify' : 'jade', 'vendors-js', 'vendors-css', 'copy', 'watch', 'browser-sync']);
+gulp.task('default', [(env.fy) ? 'browserify' : 'jade', 'sourcemaps', 'vendors-js', 'vendors-css', 'copy', 'watch', 'browser-sync']);
 
 // Боевая сборка
 gulp.task('build', [(env.fy) ? 'browserify' : 'jade', 'copy', 'vendors-js', 'vendors-css', 'imagemin', 'csso', 'deploy']);

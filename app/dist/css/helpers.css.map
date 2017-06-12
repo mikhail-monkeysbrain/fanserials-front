@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["helpers.css"],"sourcesContent":[".clear {\n  clear: both;\n}\n.text__static {\n  max-width: 900px;\n}\n"],"file":"helpers.css","sourceRoot":"/source/"}

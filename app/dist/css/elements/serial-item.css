@@ -1,6 +1,7 @@
 .serial__item {
   position: relative;
   cursor: pointer;
+  margin: 0 auto;
 }
 @media screen and (max-width: 960px) {
   .serial__item {
@@ -308,4 +309,7 @@
   background: -webkit-gradient(linear, left top, right top, from(#fc9b29), to(#f88701));
   background: -webkit-linear-gradient(left, #fc9b29 0%, #f88701 100%);
   background: linear-gradient(to right, #fc9b29 0%, #f88701 100%);
+}
+.serial__item--translate__item:hover {
+  background: #f00;
 }
