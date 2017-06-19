@@ -1,3 +1,7 @@
+media(maxWidth)
+	@media screen and (max-width: maxWidth)
+		{block}
+
 .serial--header
 	position relative
 	width 100%
@@ -10,9 +14,13 @@
 	justify-content space-between
 	align-items flex-start
 	margin-bottom 2em
+	+media(1200px)
+		flex-direction column
 	&--button
 		display flex
 		margin-top -2em
+		+media(1200px)
+			display none
 		&--item
 			background #3a3229
 			padding 15px 22px 11px 16px
@@ -29,10 +37,16 @@
 		margin-top 23px
 		display flex
 		justify-content space-between
+		+media(480px)
+			overflow-x: scroll
 	&--ancor
 		color: #6c6c6c
 		display flex
 		align-items center
+		+media(1200px)
+			margin-right 1em
+		+media(480px)
+			flex-shrink 0
 		img
 			height 16px
 			margin-right 10px
@@ -40,10 +54,15 @@
 		&:nth-last-child(1)
 			padding-left 3em
 			padding-right 2em
+			+media(480px)
+				padding-left 0
 	.h1
 		color #fff
 		display flex
 		align-items center
+		+media(1200px)
+			flex-direction column
+			align-items flex-start
 	p 
 		color #fefefe
 	.rate
@@ -51,16 +70,33 @@
 		background transparent
 		color #fff
 		padding-top 5px
+		+media(1200px)
+			margin-top .5em
+			margin-left -7px
+			padding-left 0
 	.kinigo::before
 		background: url(../img/kinogo__gray.png) center no-repeat
 		background-size: cover
+		+media(768px)
+			width 16px
+			height 15px
 	.imdh::before
 		background: url(../img/imdb__gray.png) center no-repeat
 		background-size: cover
+		+media(768px)
+			width 29px
+			height 13px
 .rate__stars
 	display flex
 	align-items center
 	margin-top 12px
+	p 
+		opacity: 0.3
+		color: #fefefe
+		font-family: "PT Sans"
+		font-size: 14px
+		font-weight: 400
+		line-height: 36px
 #reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label 
 	background url('../img/rate__stars.png') no-repeat
 #reviewStars-input 
@@ -118,6 +154,17 @@
 	margin-top 40px
 	display flex
 	align-items center
+	+media(480px)
+		flex-direction column
+		align-items flex-start
+		margin-top 0
+	p
+		opacity: 0.3
+		color: #fefefe
+		font-family: "PT Sans"
+		font-size: 14px
+		font-weight: 400
+		line-height: 36px
 	&--item
 		color #848484
 		width 35px
@@ -143,7 +190,9 @@ ul
 	&.season--checker
 		margin-top 0
 		margin-left .5em
-		
+		flex-direction row
+		+media(480px)
+			margin-left 0
 .serial--header__tabs
 	display flex
 	justify-content space-between
